@@ -1,4 +1,3 @@
-
 ### What is this repository for? ###
 
 * REST API to fetch data from twitter.
@@ -12,6 +11,15 @@
 * All the required libraries are already added, so just place the repository's 'WebContent' directory into Tomcat's webapps directory and replace the TwitterCralwer.class file with your own compiled file
 * Now start the tomcat server
 * Read the API Docs section to know how to use the API
+
+### Set up database (Using MongoDB) ###
+
+1) use twitter-crawler
+2) db.createCollection("user")
+3) db.user.createIndex({"uid":1},{unique:true})
+4) db.createCollection("tweets")
+5) db.tweets.createIndex({"tid":1},{unique:true})
+6) db.createCollection("follows")
 
 ### API Docs ###
 
