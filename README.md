@@ -14,12 +14,12 @@
 
 ### Set up database (Using MongoDB) ###
 
-1) use twitter-crawler
-2) db.createCollection("user")
-3) db.user.createIndex({"uid":1},{unique:true})
-4) db.createCollection("tweets")
-5) db.tweets.createIndex({"tid":1},{unique:true})
-6) db.createCollection("follows")
+1. use twitter-crawler
+2. db.createCollection("user")
+3. db.user.createIndex({"uid":1},{unique:true})
+4. db.createCollection("tweets")
+5. db.tweets.createIndex({"tid":1},{unique:true})
+6. db.createCollection("follows")
 
 ### API Docs ###
 
